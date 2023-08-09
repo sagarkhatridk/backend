@@ -24,11 +24,11 @@ router.post(
 );
 
 
-router.get(
+router.post(
   "/sendmail",
 
   async (req, res) => {
-    const { email } = req.body
+    const {name, email, message, subject } = req.body
     const transporter = nodemailer.createTransport({
       host: 'smtp.ethereal.email',
       port: 587,
@@ -43,10 +43,10 @@ router.get(
       // send mail with defined transport object
       const info = await transporter.sendMail({
         from: '"Sagar Khatri " <sagarkhatri@outlook.in>', // sender address
-        to: "email", // list of receivers
-        subject: "Hello ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: "<b>Hello world?</b>", // html body
+        to: email, // list of receivers
+        subject: subject, // Subject line
+        text: message, // plain text body
+        html: `<h2>${name}</b><br><p>${message}</p>`, // html body
       });
     
     
