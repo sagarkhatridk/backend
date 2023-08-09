@@ -43,7 +43,7 @@ router.get(
       // send mail with defined transport object
       const info = await transporter.sendMail({
         from: '"Sagar Khatri " <sagarkhatri@outlook.in>', // sender address
-        to: "email", // list of receivers
+        to: email, // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
         html: "<b>Hello world?</b>", // html body
