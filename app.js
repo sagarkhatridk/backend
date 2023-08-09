@@ -7,10 +7,7 @@ const cors = require('cors')
 app.use(cors())
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 842aa5adadb10779b3f0a48a8d6be1bac4dcc1e6
 const port = process.env.PORT || 5000
 
 
