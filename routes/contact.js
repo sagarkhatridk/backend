@@ -24,7 +24,7 @@ router.post(
 );
 
 
-router.get(
+router.post(
   "/sendmail",
 
   async (req, res) => {
