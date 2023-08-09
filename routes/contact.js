@@ -47,9 +47,7 @@ router.post(
         subject: subject, // Subject line
         text: message, // plain text body
         html: `<h2>${name}</b><br><p>${message}</p>`,
-        subject: "Hello ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: "<b>Hello world?</b>", // html body
+        
 
       });
     
