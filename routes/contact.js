@@ -44,9 +44,15 @@ router.post(
       const info = await transporter.sendMail({
         from: '"Sagar Khatri " <sagarkhatri@outlook.in>', // sender address
         to: email, // list of receivers
+<<<<<<< HEAD
         subject: subject, // Subject line
         text: message, // plain text body
         html: `<h2>${name}</b><br><p>${message}</p>`, // html body
+=======
+        subject: "Hello ✔", // Subject line
+        text: "Hello world?", // plain text body
+        html: "<b>Hello world?</b>", // html body
+>>>>>>> 842aa5adadb10779b3f0a48a8d6be1bac4dcc1e6
       });
     
     
